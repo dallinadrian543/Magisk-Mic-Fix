@@ -27,7 +27,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=magisk_mic_fix
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -40,7 +40,7 @@ PROPFILE=false
 POSTFSDATA=false
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 ##########################################################################################
 # Installation Message
@@ -50,7 +50,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "     Magisk Mic Fix Module     "
   ui_print "*******************************"
 }
 
@@ -65,10 +65,6 @@ print_modname() {
 # You don't need to remove the example below, these values will be overwritten by your own list
 # This is an example
 REPLACE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
 "
 
 # Construct your own list here, it will overwrite the example
